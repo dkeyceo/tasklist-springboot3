@@ -11,7 +11,7 @@ import lombok.Data;
 public class JwtProperties {
 	
 	private String secret;
-	private String access;
-	private String refresh;
+	private long access;
+	private long refresh;
 
 }

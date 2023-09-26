@@ -16,7 +16,6 @@ import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 
-@Component
 @AllArgsConstructor
 public class JwtTokenFilter extends GenericFilterBean {
 
@@ -39,7 +38,7 @@ public class JwtTokenFilter extends GenericFilterBean {
 				
 			}
 		}
-
+		chain.doFilter(request, response);
 	}
 
 }
